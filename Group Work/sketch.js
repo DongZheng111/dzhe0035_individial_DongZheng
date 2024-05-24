@@ -13,8 +13,7 @@ let randInt = (a, b) => (Math.floor(Math.random() * (b - a) + a));
 
 // Setting the canvas size
 function setup() {
-  createCanvas(500, 500);
- noLoop()
+  createCanvas(800, 800);
   // Calculate the width of each small square
   u = width / N;
   // Calculate the boundary of each small square
