@@ -37,8 +37,7 @@ function draw() {
 
   // Iterate over all the cubes
   for (let recta of rectangles) {
-    // Drawing small squares
-    drawRectangle(recta.i * u, recta.j * u, recta.si * u, recta.sj * u, recta.insideCol);
+    // Drawing small squares    drawRectangle(recta.i * u, recta.j * u, map(mouseX,0,width,0,recta.si * u), map(mouseY,0,height,0,recta.sj * u), recta.insideCol);
   }
 }
 
@@ -234,10 +233,3 @@ function drawRectangle(x0, y0, si, sj, insideCol) {
     rect(x0 + si, y, v, v);
   }
 }
-
- 
-
- 
-    
-    
-  
