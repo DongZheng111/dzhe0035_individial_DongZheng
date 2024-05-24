@@ -32,7 +32,9 @@ function draw() {
   noStroke()
   randomSeed(2)
   
-  
+  // Move the ball
+  translate(width/2-mouseX,height/2-mouseY)
+
   // Iterate over all the cubes
   for (let recta of rectangles) {
     // Drawing small squares
@@ -49,6 +51,9 @@ function  mouseClicked(){
     // Add the generated color to the array
     palette.push(randomColor); 
   }
+  
+  mainCol = '#' + Math.floor(Math.random()*16777215).toString(16)
+  allColors = [...palette.slice(1), mainCol]
 
 }
 
